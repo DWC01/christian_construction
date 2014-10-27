@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+$brand-color: #336699;
+ 
+$navbar-default-color: #fff;
+$navbar-default-bg: #fff;
+$navbar-default-link-active-color: $brand-color;
+$navbar-default-link-active-bg: #fff;
+$navbar-default-link-hover-color: $brand-color;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
