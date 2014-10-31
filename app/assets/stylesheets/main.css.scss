@@ -1,0 +1,8 @@
+.main-header{
+  margin: 15px 0 15px 0;
+  border-bottom: 1px solid #eee; 
+  & h1 {
+    color: #336699;
+    font-weight: 200;
+  }
+}

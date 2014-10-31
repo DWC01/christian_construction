@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-  <title><%= content_for?(:title) ? yield(:title) : "Live It Up Social" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "Christian Construction" %></title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
 
@@ -22,7 +22,7 @@
     <![endif]-->
 </head>
  <body>
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-cc navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,7 +33,7 @@
         </button>
 
         <%= link_to do %>
-          <%= image_tag 'logo.png', style: "width:300px;" %>
+          <%= image_tag 'logo.png', style: "width:300px;", :class => "cc-logo" %>
         <% end %>
 
       </div>
@@ -41,22 +41,23 @@
 
         <ul class="nav navbar-nav pull-right">
           <li >
-            <%= link_to "About", photo_path %>
+            <%= link_to "About", about_path %>
           </li>
           <li >
-            <%= link_to "Portfolio", photo_path %>
+            <%= link_to "Portfolio", "" %>
           </li>
           <li >
-            <%= link_to "Testimonials", photo_path %>
+            <%= link_to "Testimonials", testimonials_path %>
           </li>
           <li >
-            <%= link_to "Contact", photo_path %>
+            <%= link_to "Contact", "" %>
           </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
   <div class="container container-main">
+  <%= render 'layouts/flash' %>
   <%= yield %>
   </div><!-- /.container -->
 </body>

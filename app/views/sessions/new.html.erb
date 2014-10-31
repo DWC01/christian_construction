@@ -1,0 +1,9 @@
+<div class="user-form">
+  <%= form_tag sessions_path do %>
+  <%= text_field_tag :email, params[:email], placeholder: 'email', :required => true, :class => "form-control" %>
+  <%= password_field_tag :password, nil, placeholder: 'password', :required => true, :class => "form-control" %>
+  <div class="row center">
+   <%= submit_tag "Sign in", :class => "btn btn-primary" %>
+  </div>
+  <% end %>
+</div>

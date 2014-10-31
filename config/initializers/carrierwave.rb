@@ -5,7 +5,7 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => 'vW7u1IZmq3OI3b44WoVi8s6vf0nZsaBGe70laIq1',                        # required
     :region                 => 'us-west-1',                                                       # optional, defaults to 'us-east-1'
   }
-  config.fog_directory  = 'christian_construction'                                                         # required
+  config.fog_directory  = 'christianconstruction'                                                         # required
   config.fog_public     = false                                                                   # optional, defaults to true
   config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}                                  # optional, defaults to {}
 end

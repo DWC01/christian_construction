@@ -5,15 +5,39 @@
   margin-top: 65px;  
 }
 
+.center{
+  text-align: center;
+  margin: 0px auto; 
+}
+
+.error{
+  border: 1px solid red;
+  color: red;
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cc-logo{
+  position:relative;
+  top: 5px
+}
+
 /* NavBar */
+
+.navbar-cc{
+  height: 75px;
+  border-bottom: 1px solid #ddd !important;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
 
 .navbar-nav{
   & li:first-child {
-    border-left: 1px solid #eee;
+    border-left: 0px solid #ddd;
   }
   & li{
-    border-right: 1px solid #eee;
-    padding: 10px 0px 7px 0px;
+    border-right: 0px solid #ddd;
+    padding: 16px 0px 9px 0px;
   }
 }
 

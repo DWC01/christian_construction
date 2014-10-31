@@ -1,0 +1,28 @@
+<div class="photo-upload-form-wrapper">
+  <div class="center">
+    <h2>
+      Photo Upload:    
+    </h2>
+  </div>
+  <div class="photo-upload-form">
+    <%= form_for @photo do |f| %>
+      <div class="photo-form-input">
+        <%= f.file_field :file, :class=>"form-input" %>
+      </div>
+      <div class="photo-form-input">
+        <%= f.select :category, options_for_select([
+            ['Kitchens','kitchens'],
+            ['Baths'   ,'baths'],
+            ['Remodels','remodels']
+            ]), :class=>"form-input" %>
+      </div>
+      <div class="photo-form-input">
+        <%= f.check_box :homepage, :class => "checkbox inline pull-left" %>
+        <%= f.label "homepage?", :class => "pull-left" %>
+      </div>
+  </div>
+  <div class="center photo-upload-submit">
+    <%= f.submit "Upload Photo!", :class => "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
